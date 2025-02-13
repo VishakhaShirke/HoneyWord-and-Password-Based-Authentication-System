@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Login & Register Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="forms-container">
+      <div class="Login-Register">
+        <form action="#" class="Login-form">
+          <h2 class="title">Login</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" />
+          </div>
+          <!--<p style="color: red;">Wrong Password</p>-->
+          <input type="submit" value="Login" class="btn solid" />
+        </form>
+        <form action="#" class="Register-form">
+          <h2 class="title">Register</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Full Name" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-phone"></i>
+            <input type="tel" placeholder="Phone Number" maxlength="10" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-shield-alt"></i>
+            <select id="securityQuestionSelect" onchange="updatePlaceholder()">
+              <option value="" disabled selected>Select Security Question</option>
+              <option value="1">What is your favorite color?</option>
+              <option value="2">In what city were you born?</option>
+              <option value="3">What is school name?</option>
+            </select>
+          </div>
+          <div class="input-field">
+            <i class="fas fa-shield-alt"></i>
+            <input type="text" id="securityAnswerInput" placeholder="Answer" onfocus="clearPlaceholder()" />
+          </div>
+          <input type="submit" class="btn" value="Register" />
+        </form>
+      </div>
+    </div>
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h3>New here ?</h3>
+          <p>
+            Your registration journey starts here, join us.
+          </p>
+          <button class="btn transparent" id="Register-btn">
+            Register
+          </button>
+        </div>
+        <img src="img/picture3.png" class="image" alt="" />
+      </div>
+      <div class="panel right-panel">
+        <div class="content">
+          <h3>One of us ?</h3>
+          <p>
+            Secure login, because your data deserves armor.
+          </p>
+          <button class="btn transparent" id="Login-btn">
+            Login
+          </button>
+        </div>
+        <img src="img/picture2.png" class="image" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
